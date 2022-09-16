@@ -1,0 +1,82 @@
+@font-face {
+    src: url('cursedtimer.ttf');
+    font-family: "cursedtimer"
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(#881337, black);
+    color: white;
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col {
+    display: block;
+    align-items: column;
+    width: 230px;
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+}
+
+#digit-home, #digit-guest {
+    font-size: 100px;
+    color: red;
+    background: black;
+    padding: 40px 20px 20px; 20px;
+    font-family: 'cursedtimer', Courier, monospace;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button {
+    color: #FECDD3;
+    background: #881337;
+    border: 3px solid #FECDD3;
+    border-radius: 5px;
+    width: 50px;
+    padding: 13px 0 13px 0;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'cursedtimer', Courier, monospace;
+}
+
+button:hover {
+    background: black;
+}
+
+button#home-reset-btn, button#guest-reset-btn {
+    width: 205px;
+    margin-top: 0px;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 75px;
+    margin: 50px 0 0px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 5px 5px 5px black;
+}
+
+h3 {
+    font-size: 50px;
+    margin-bottom: 10px;

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="font" href="cursedtimer.ttf">
+    </head>
+    <body>
+        <h2>BASKETBALL SCOREBOARD</h2>
+        <div class="container">
+            <div class="col">
+                <div class="title">
+                    <h3>HOME</h3>
+                </div> <!-- end title -->
+                <div id="digit-home">
+                    0
+                </div>  <!-- end digit-home -->
+                <div class="buttons-wrapper">
+                    <button id="home-1-btn" onClick="incHomeBy1()">+1</button>
+                    <button id="home-2-btn" onClick="incHomeBy2()">+2</button>
+                    <button id="home-3-btn" onClick="incHomeBy3()">+3</button>
+                </div> <!-- end buttons -->
+                <button id="home-reset-btn" onClick="resetHome()">RESET</button>
+            </div> <!-- end col -->
+
+            <div class="col">
+                <div class="title">
+                    <h3>GUEST</h3>
+                </div> <!-- end title -->
+                <div id="digit-guest">
+                    0
+                </div> <!-- end digit-guest -->
+                <div class="buttons-wrapper">
+                    <button id="guest-1-btn" onClick="incGuestBy1()">+1</button>
+                    <button id="guest-2-btn" onClick="incGuestBy2()">+2</button>
+                    <button id="guest-3-btn" onClick="incGuestBy3()">+3</button>
+                </div> <!-- end buttons-wrapper -->
+                <button id="guest-reset-btn" onClick="resetGuest()">RESET</button>
+            </div> <!-- end col -->
+
+        </div> <!-- end container -->
+        <script src="index.js"></script>
+    </body>
+</html>
